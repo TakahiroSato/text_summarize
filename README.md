@@ -35,10 +35,10 @@ model = gensim.models.KeyedVectors.load_word2vec_format('./vector/model.vec', bi
 ```
 
 
-文章の重要度順に並べる
+文章の要約
 ```
 import textsummarize
-textsummarize.summarize({要約したい文章}, model)
+textsummarize.summarize({要約したいテキストファイルパス}, {要約後のサイズ}, model)
 ```
 
 Python: オブジェクトを漬物 (Pickle) にする
